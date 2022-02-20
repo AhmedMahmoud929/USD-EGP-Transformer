@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #c4e0ff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    border-radius: 150px;
+    width: 400px;
+    height: 550px;
+    border: 10px #288cff solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #003169;
+    transition: 0.4s;
+}
+
+.container h2 {
+    color: #288cff;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.container h2 i {
+    color: #77b7ff;
+    margin: 0 5px;
+}
+
+.container input {
+    outline: none;
+    border: none;
+    width: 80%;
+    height: 50px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding-left: 10px;
+    border-radius: 15px;
+    color: #fff;
+    transition: 0.7s;
+    background-color: #003169;
+    border: 3px #4b9fff solid;
+}
+
+.container input::-webkit-inner-spin-button {
+    appearance: none;
+}
+
+.container input:hover {
+    background-color: #4b9fff;
+}
+
+.container input:focus {
+    transform: scale(1.1);
+    background-color: #4b9fff;
+}
+
+.container #dollar {
+    margin-bottom: 1rem;
+}
+
+.container input::placeholder {
+    color: #fff;
+    opacity: 0.5;
+}
+
+
+/* // MediaQ */
+
+@media (max-width:445px) {
+    .container {
+        width: 300px;
+        border-radius: 100px;
+    }
+    .container h2 {
+        font-size: 2rem;
+    }
+}
